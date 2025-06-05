@@ -1,0 +1,22 @@
+Bối Cảnh Vấn Đề:
+
+Phát hiện đối tượng là một nhiệm vụ cốt lõi trong thị giác máy tính, cho phép xác định vị trí và loại của các đối tượng khác nhau trong một hình ảnh. Đối với người dùng, việc thấy được mô hình nhận diện các đối tượng ở đâu, kèm theo tên và độ chính xác (nếu có) là rất quan trọng để đánh giá hiệu quả và hiểu cách mô hình hoạt động.
+
+Yêu Cầu Cụ Thể Cần Đạt Được:
+
+Xây dựng một giao diện người dùng (UI) tự động có khả năng:
+
+Tương tác đầu vào: Người dùng có thể tải lên một hoặc nhiều hình ảnh.
+Gọi mô hình: Giao diện tự động gửi hình ảnh đến mô hình phát hiện đối tượng được chỉ định trong task.yaml.
+Hiển thị kết quả: Trực quan hóa kết quả phát hiện đối tượng một cách rõ ràng. Với mỗi hình ảnh, giao diện cần hiển thị:
+Hình ảnh gốc.
+Các khung bao (bounding box) xung quanh những đối tượng được mô hình phát hiện.
+Nhãn (label) tên lớp của đối tượng tương ứng với mỗi khung bao.
+(Tùy chọn, nếu model cung cấp) Điểm tin cậy (confidence score) cho mỗi đối tượng được phát hiện.
+Định Dạng Hiển Thị Dữ Liệu Đầu Ra (Ví Dụ Gợi Ý):
+
+Giao diện nên trình bày kết quả một cách trực quan, ví dụ:
+
+Hiển thị hình ảnh mà người dùng đã tải lên.
+Trên chính hình ảnh đó (hoặc một bản sao bên cạnh), vẽ các khung bao (bounding boxes) và hiển thị nhãn lớp (class label) của đối tượng ngay cạnh hoặc phía trên khung bao.
+Có thể có một danh sách các đối tượng được phát hiện kèm theo thông tin chi tiết (nhãn, điểm tin cậy) nếu không muốn hiển thị trực tiếp quá nhiều thông tin lên ảnh.

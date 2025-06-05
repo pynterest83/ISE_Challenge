@@ -1,0 +1,19 @@
+Bối Cảnh Vấn Đề:
+
+Trong lĩnh vực phân loại hình ảnh, việc cung cấp một giao diện trực quan cho người dùng để họ hiểu cách mô hình xử lý dữ liệu đầu vào và trả về kết quả là rất quan trọng. Người dùng cần có khả năng tương tác dễ dàng với hệ thống, quan sát được dữ liệu họ cung cấp và kết quả phân loại từ mô hình.
+
+Yêu Cầu Cụ Thể Cần Đạt Được:
+
+Xây dựng một giao diện người dùng (UI) tự động cho phép:
+
+Tương tác đầu vào: Người dùng có thể tải lên một thư mục chứa các hình ảnh cần phân loại.
+Gọi mô hình: Giao diện tự động gửi các hình ảnh này đến mô hình phân loại hình ảnh được chỉ định trong task.yaml.
+Hiển thị kết quả: Trực quan hóa kết quả phân loại một cách rõ ràng, hiển thị từng hình ảnh cùng với nhãn (label) dự đoán tương ứng từ mô hình.
+Định Dạng Hiển Thị Dữ Liệu Đầu Ra (Ví Dụ Gợi Ý):
+
+Giao diện nên trình bày kết quả một cách trực quan, ví dụ:
+
+Một khu vực hiển thị danh sách các hình ảnh đã tải lên.
+Khi chọn hoặc duyệt qua từng hình ảnh, giao diện hiển thị:
+Cột 1 (hoặc khu vực A): Hiển thị hình ảnh gốc.
+Cột 2 (hoặc khu vực B): Hiển thị nhãn (label) được mô hình dự đoán cho hình ảnh đó.

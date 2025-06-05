@@ -1,0 +1,31 @@
+Bối cảnh của vấn đề:
+Đây là một nhiệm vụ hồi quy. Mục tiêu là dự đoán giá trị trung bình của nhà ở các quận của California bằng cách sử dụng các đặc trưng từ cuộc điều tra dân số năm 1990, chẳng hạn như thu nhập trung bình, tuổi trung bình của nhà ở, tổng số phòng, v.v. ()
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận đầu vào là một list các features của khu vực có liên quan đến giá trung bình của nhà ở và đầu ra hệ thống là phân loại khu vực đó thuộc nhóm “rẻ”, “trung bình” hay “đắt” để dễ trực quan hóa hoặc định hướng chính sách
+Mô hình cần xử lý đầu vào là 1 list các features liên quan đến giá trung bình của nhà ở
+Đầu ra là nhãn của nhà ở khu vực đấy thuộc về
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv. Mỗi hàng là features cho từng task bao gồm các cột:
+
+MedInc: Thu nhập trung vị của người dân sống trong khu vực (block)
+HouseAge: Tuổi trung vị của các căn nhà trong khu vực
+AveRooms: Số phòng trung bình của các căn nhà trong khu vực
+AveBedrms: Số phòng ngủ trung bình của các căn nhà trong khu vực
+Population: Số người sinh sống trong khu vực
+AveOccup: Số người trung bình sống chung trong một hộ (dưới cùng một mái nhà)
+Latitude: Vĩ độ địa lý
+Longitude: Kinh độ địa lý
+ID: id của task
+ 
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi task
+có các cột:
+ID: id của task
+MedHouseVal: nhóm  nhà ở khu vực đó thuộc về
+
+Các nhóm có thể là:
+low: nhóm "rẻ" có giá trung bình < 1
+medium: nhóm "rẻ" có 1 <= giá trung bình < 2.5
+high: nhóm "rẻ" có giá trung bình >= 2.5

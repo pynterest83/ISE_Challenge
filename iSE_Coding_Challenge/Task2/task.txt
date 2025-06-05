@@ -1,0 +1,13 @@
+Bối cảnh của vấn đề:
+Trong thời đại thông tin hiện nay, người dùng phải tiếp nhận một lượng lớn tin tức mỗi ngày từ nhiều nguồn khác nhau. Việc tự động phân loại các đoạn tin tức theo chủ đề giúp hệ thống quản lý nội dung hiệu quả hơn, đồng thời hỗ trợ người dùng tìm kiếm, lọc, và tiếp cận thông tin theo lĩnh vực quan tâm. Đây là một bài toán điển hình trong lĩnh vực xử lý ngôn ngữ tự nhiên (NLP), có thể áp dụng trong các hệ thống báo chí điện tử, nền tảng mạng xã hội, hay công cụ tổng hợp tin tức.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng phân loại đoạn văn bản tiếng Anh mô tả nội dung một bản tin vào đúng nhóm chủ đề tương ứng.
+Ứng dụng cần dự đoán chính xác chủ đề chính của đoạn tin tức dựa trên nội dung ngữ nghĩa.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một đoạn văn bản ngắn bằng tiếng Anh, có nội dung mô tả một bản tin, 
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+Một nhãn chủ đề duy nhất cho mỗi đoạn tin tức đầu vào.
+Các nhãn thuộc tập sau: 'Marketplace', 'Recreation', 'Technology', 'Politics', 'Religion'

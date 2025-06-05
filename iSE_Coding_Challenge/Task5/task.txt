@@ -1,0 +1,34 @@
+Bối cảnh của vấn đề:
+Trong nhiều ứng dụng thực tế như tổng hợp nội dung hình ảnh, phân loại album, hay trích xuất đặc trưng nội dung cho ảnh tổ hợp, cần xác định chủ đề chính của một ảnh ghép từ nhiều ảnh con. Bài toán này đòi hỏi ứng dụng không chỉ nhận diện được nội dung của từng ảnh con, mà còn cần xác định chủ đề chiếm ưu thế trong toàn bộ ảnh tổng thể.
+
+Yêu cầu cụ thể cần đạt được:
+Mỗi đầu vào là một ảnh tổ hợp, ghép từ 9 ảnh màu nhỏ (3x3).
+Nhiệm vụ của ứng dụng là:
+Xác định chủ đề chiếm số lượng nhiều nhất trong 9 ảnh con.
+Trường hợp có nhiều chủ đề xuất hiện với tần suất bằng nhau, có thể chọn một chủ đề bất kỳ trong số đó làm kết quả.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là "images" chứa các ảnh màu RGB (288x288), được ghép từ 9 ảnh RGB con (32x32) (3 hàng × 3 cột).
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh. 
+nhãn của ảnh là một nhãn duy nhất đại diện cho chủ đề xuất hiện nhiều nhất trong 9 ảnh con.
+Các chủ đề sau nằm trong danh sách sau:
+       ['forest', 'orchid', 'spider', 'fox', 'caterpillar', 'crocodile',
+       'whale', 'road', 'motorcycle', 'tiger', 'woman', 'orange',
+       'elephant', 'otter', 'flatfish', 'cup', 'sea', 'mountain', 'cloud',
+       'willow_tree', 'rabbit', 'couch', 'maple_tree', 'wardrobe',
+       'mushroom', 'plain', 'telephone', 'shrew', 'bowl', 'tractor',
+       'camel', 'bus', 'cattle', 'house', 'cockroach', 'lawn_mower',
+       'oak_tree', 'apple', 'bicycle', 'beetle', 'palm_tree', 'sunflower',
+       'poppy', 'keyboard', 'porcupine', 'snake', 'can', 'pear', 'shark',
+       'chimpanzee', 'hamster', 'train', 'cra', 'bear', 'sweet_pepper',
+       'pine_tree', 'bed', 'tank', 'beaver', 'bridge', 'girl',
+       'skyscraper', 'wolf', 'raccoon', 'rose', 'worm', 'table',
+       'pickup_truck', 'turtle', 'lizard', 'leopard', 'streetcar',
+       'rocket', 'man', 'tulip', 'lamp', 'seal', 'lion', 'butterfly',
+       'kangaroo', 'television', 'ray', 'chair', 'skunk', 'trout',
+       'possum', 'mouse']

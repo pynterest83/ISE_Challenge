@@ -1,0 +1,17 @@
+Bối cảnh của vấn đề:
+Điều quan trọng là các công ty thẻ tín dụng có thể nhận ra các giao dịch thẻ tín dụng gian lận để khách hàng không phải trả tiền cho những mặt hàng mà họ không mua. Một vấn đề của task này là dữ liệu training khá là ít cho giao dịch gian lận gây vấn đề mất cân bằng nhãn dữ liệu.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận đầu vào là một list các features liên quan đến sự gian lận của giao dịch và đầu ra hệ thống là phân loại giao dịch cụ thể đó có gian lận hay không
+Mô hình cần xử lý đầu vào là 1 list các feature liên quan đến gian lận của giao dịch
+Đầu ra là nhãn của giao dịch đó thuộc về
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv. Mỗi hàng là features cho từng task bao gồm các cột:
+28 đặc trưng V1, V2, … V28 là các thành phần chính thu được từ PCA (Không được công bố cụ thể);  hai đặc trưng không được biến đổi bằng PCA là 'Time' và 'Amount'. Đặc trưng 'Time' thể hiện số giây đã trôi qua giữa mỗi giao dịch và giao dịch đầu tiên trong tập dữ liệu. Đặc trưng 'Amount' là số tiền của giao dịch, đặc trưng này có thể được sử dụng cho học tập nhạy cảm với chi phí phụ thuộc vào ví dụ và cuối cùng là ID: id của task
+ 
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi task
+có các cột:
+ID: id của task
+class: 1 nếu là giao dịch gian lận, 0 với trường hợp ngược lại

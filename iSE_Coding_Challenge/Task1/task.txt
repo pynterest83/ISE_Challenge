@@ -1,0 +1,18 @@
+"Bối cảnh của vấn đề:
+Nhận dạng chữ viết tay là một bài toán cơ bản trong lĩnh vực học máy và xử lý ảnh, với nhiều ứng dụng thực tiễn như nhận dạng chữ số trên phiếu khảo sát, hóa đơn hay bài thi tự động. Việc phân loại chữ số viết tay thành số nguyên tố hoặc không giúp mở rộng khả năng ứng dụng trong các bài toán toán học tự động, kiểm tra bài tập, hoặc các ứng dụng giáo dục.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận diện chữ số viết tay từ ảnh và xác định xem số đó có phải là số nguyên tố hay không.
+Đầu vào là ảnh chứa một chữ số viết tay.
+Đầu ra là nhãn phân loại nhị phân: ""nguyên tố"" hoặc ""không nguyên tố"".
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh grayscale 28x28 pixel, mỗi ảnh chứa một chữ số viết tay từ 0 đến 9.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh:
+""số nguyên tố"" nếu số trong ảnh là số nguyên tố.
+""không nguyên tố"" nếu số trong ảnh không phải số nguyên tố."
