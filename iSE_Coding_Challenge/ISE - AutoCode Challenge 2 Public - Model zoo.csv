@@ -1,0 +1,8 @@
+STT,Tên Model,Link model
+1,Nhận diện ảnh chữ viết tay,https://huggingface.co/thanhtlx/image_classification_01
+2,Phân loại văn bản thành các topic,https://huggingface.co/thanhtlx/text_classification_1
+3,Dự đoán giá trung bình nhà ở các quận Cali,https://huggingface.co/zhaospei/Model_3
+4,Dự đoán giá trung bình nhà ở các quận Cali,https://huggingface.co/zhaospei/Model_2
+5,Phân loại gian lận thẻ tín dụng,https://huggingface.co/zhaospei/Model_4
+6,Phân loại hình ảnh,https://huggingface.co/zhaospei/Model_7
+7,"Phân loại hình ảnh thành 100 lớp đối tượng chi tiết (fine-grained),",https://huggingface.co/zhaospei/Model_6
