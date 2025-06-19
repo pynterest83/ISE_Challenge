@@ -1,18 +1,0 @@
-Bối Cảnh Vấn Đề 📝
-Phân loại văn bản là một tác vụ phổ biến trong xử lý ngôn ngữ tự nhiên, giúp tự động gán nhãn hoặc danh mục cho một đoạn văn bản. Người dùng thường muốn có một giao diện đơn giản để nhập văn bản, gửi đến mô hình, và nhanh chóng nhận lại kết quả phân loại, ví dụ như xác định chủ đề của một bài báo, phân tích cảm xúc của một bình luận, hoặc lọc thư rác.
-
-Yêu Cầu Cụ Thể Cần Đạt Được 🎯
-Xây dựng một giao diện người dùng (UI) tự động cho phép:
-
-Tương tác đầu vào: Người dùng có thể nhập hoặc dán một đoạn văn bản vào một trường nhập liệu (text area/input field), hoặc tải lên một tệp văn bản (.txt, .csv, v.v. tùy theo định dạng được mô tả trong task.yaml).
-Gọi mô hình: Giao diện tự động gửi đoạn văn bản này đến mô hình phân loại văn bản được chỉ định trong task.yaml.
-Hiển thị kết quả: Trực quan hóa kết quả phân loại một cách rõ ràng, hiển thị:
-Đoạn văn bản gốc mà người dùng đã nhập.
-Nhãn (label) hoặc danh mục được mô hình dự đoán cho đoạn văn bản đó.
-(Tùy chọn, nếu model cung cấp) Điểm tin cậy (confidence score) cho dự đoán.
-
-Định Dạng Hiển Thị Dữ Liệu Đầu Ra (Ví Dụ Gợi Ý) 📊
-Giao diện nên trình bày kết quả một cách trực quan và dễ hiểu, ví dụ:
-
-Khu vực A: Hiển thị lại đoạn văn bản gốc mà người dùng đã cung cấp. 
-Khu vực B: Hiển thị rõ ràng nhãn dự đoán (ví dụ: "Thể thao", "Tiêu cực", "Spam"). Nếu có nhiều nhãn tiềm năng với điểm tin cậy, có thể hiển thị một vài nhãn hàng đầu hoặc biểu đồ thể hiện sự phân bổ xác suất.
